@@ -60,7 +60,7 @@ Jetzt ist es an dir von dieses Tutorial zu verlassen und in den Editor zu wechse
 
 Dieses Repository kann als **Tutorial** für MakeCode verwenden.
 
-öffne dazu den Link: [https://github.com/r00b1nh00d/SpieleBausteine/blob/master/KurzHilfe%20Spiele.pdf]
+öffne dazu den Link: [https://makecode.calliope.cc/#tutorial:https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf]
 #### Metadaten (verwendet für Suche, Rendering)
 
 * for PXT/calliopemini
