@@ -9,8 +9,7 @@ Dies ist eine Einführung in das Programmieren von Spielen mit dem @boardname@.
 
 ## ~ @unplugged
 Es soll ein Hindernislauf programmiert werden.
-Ziel des Spieles bewege die Spielfigur mit den Tasten A und B, so soll den Hindernissen aus, welche vom oberen Bildschirmrand nach unten bewegt werden um Punkte zu sammeln.
-
+Ziel des Spieles: Sammle möglichst viele Punkte indem du mit den Tasten A und B den Hindernissen, welche vom oberen Bildschirmrand nach unten bewegt werden ausweichst.
 
 ## ~ @unplugged
 In dieser Einführung soll erstmal nur die Spielfigur erstellt werden und in das Thema der Sprites aus dem Bereich  ``||game:Spiele||`` eingeführt werden.
@@ -56,32 +55,12 @@ Jetzt ist es an dir von dieses Tutorial zu verlassen und in den Editor zu wechse
 
 
 
-> Diese Seite bei [https://r00b1nh00d.github.io/spiele_programmieren_lernen_hindernislauf/](https://r00b1nh00d.github.io/spiele_programmieren_lernen_hindernislauf/) öffnen
 
-## Als Erweiterung verwenden
+## Als Tutorial verwenden
 
-Dieses Repository kann als **Erweiterung** in MakeCode hinzugefügt werden.
+Dieses Repository kann als **Tutorial** für MakeCode verwenden.
 
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Neues Projekt**
-* klicke auf **Erweiterungen** unter dem Zahnrad-Menü
-* nach **https://github.com/r00b1nh00d/spiele_programmieren_lernen_hindernislauf** suchen und importieren
-
-## Dieses Projekt bearbeiten ![Build Status Abzeichen](https://github.com/r00b1nh00d/spiele_programmieren_lernen_hindernislauf/workflows/MakeCode/badge.svg)
-
-Um dieses Repository in MakeCode zu bearbeiten.
-
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Importieren** und dann auf **Importiere URL**
-* füge **https://github.com/r00b1nh00d/spiele_programmieren_lernen_hindernislauf** ein und klicke auf Importieren
-
-## Blockvorschau
-
-Dieses Bild zeigt den Blockcode vom letzten Commit im Master an.
-Die Aktualisierung dieses Bildes kann einige Minuten dauern.
-
-![Eine gerenderte Ansicht der Blöcke](https://github.com/r00b1nh00d/spiele_programmieren_lernen_hindernislauf/raw/master/.github/makecode/blocks.png)
-
+öffne dazu den Link: [https://github.com/r00b1nh00d/SpieleBausteine/blob/master/KurzHilfe%20Spiele.pdf]
 #### Metadaten (verwendet für Suche, Rendering)
 
 * for PXT/calliopemini
