@@ -50,7 +50,7 @@ let Spielfigur = game.createSprite(2, 4)
 ```
 
 ## ~avatar avatar @unplugged
-Unter : [https://github.com/r00b1nh00d/SpieleBausteine/blob/master/KurzHilfe%20Spiele.pdf] findest du auch nochmal eine kurze Übersicht zu den Befehlen aus dem Bereich ``||game: Spiele||``.
+Unter : [https://github.com/r00b1nh00d/SpieleBausteine/blob/master/KurzHilfe%20Spiele.pdf   ] findest du auch nochmal eine kurze Übersicht zu den Befehlen aus dem Bereich ``||game: Spiele||``.
 Jetzt ist es an dir von dieses Tutorial zu verlassen und in den Editor zu wechseln. Füre dort die Hindernisse 1 bis 3 dem Programm hinzu und lass diese ``||basic: Dauerhauft||`` und immer wieder neu auf der Anzeige des @boardname@ von oben nach unten bewegen. Berührt ein Hindernis die Spielfigur ist das Spiel vorbei. Sind die Hindernisse am unteren Rand angelangt sollen sie erneut an ``||math: zufälliger||`` Stelle auftauchen und mittels ein Punkt vergeben werden.
 
 
