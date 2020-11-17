@@ -1,4 +1,4 @@
-# Hindernislauf EInführung
+# Hindernislauf Einführung
 ## ~avatar avatar @unplugged
 
 Dies ist eine Einführung in das Programmieren von Spielen mit dem @boardname@. 
@@ -22,8 +22,7 @@ let Spielfigur: game.LedSprite = 0
 ```
 
 ## Schritt 2: Einen Sprite auf die Variable speichern
-Im Bereich ``||game: Spiel||`` Wird mit den sogenannten Sprites gearbeitet. Diese sind Objekte welche mehrere Eigenschaften haben. Wie z.B. eine Ausrichtung (z.B. in x-Richtung oder y-Richtung), Einen X- bzw. Y- Wert haben, eine gewisse Helligkeit speichern können oder erkennen können ob sie einen Rand oder andere Sprites berühren.
-Nehme nun aus dem Bereich ``||game: Spiel||`` den Block ``||game: erzeuge Sprite an Position x y ||``. Dieser wird in den Block unserer ``||Variables: Variable||`` geschoben.
+Im Bereich ``||game: Spiel||`` Wird mit den sogenannten Sprites gearbeitet. Diese sind Objekte welche mehrere Eigenschaften haben. Wie z.B. eine Ausrichtung (z.B. in x-Richtung oder y-Richtung), einen X- bzw. Y- Wert, eine gewisse Helligkeit speichern können oder erkennen können ob sie einen Rand oder andere Sprites berühren.  Nehme nun aus dem Bereich ``||game: Spiel||`` den Block ``||game: erzeuge Sprite an Position x y ||``. Dieser wird in den Block unserer ``||Variables: Variable||`` geschoben.
 Danach Sollte im Simulator eine LED in der Mitte des Calliope Displays leuchten, eben an der Position x=2 und y=2. Ändere nun den Y-Wert auf 4 um den Sprite an unteren Displayrand erscheinen zu lassen.
 
 ```blocks 
