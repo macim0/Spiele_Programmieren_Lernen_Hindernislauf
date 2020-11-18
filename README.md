@@ -3,7 +3,7 @@
 
 Dies ist eine Einführung in das Programmieren von Spielen mit dem @boardname@. 
 
-
+![Hindernislauf](https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/HindernislaufGIF.gif?raw=true)
 
 
 
