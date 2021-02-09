@@ -89,8 +89,10 @@ basic.forever(function () {
 ```
 
 ## Schritt 6: Das Hindernis wird zur Gefahr
-Wenn das Hindernis unten angekommen ist, müssen wir noch überprüfen ob es die Spielfigur trifft. Hierfür nutzen wir aus der Logik 
-``||logic:Wenn dann sonst||`` Bedingung. Als Bedingung nutzen wir ``||game: Sprite berührt ||``. Hier tragen wir unser Hindernis und unsere Spielfigur ein.
+Wenn das Hindernis unten angekommen ist, müssen wir noch überprüfen ob es die Spielfigur trifft. Hierfür nutzen wir aus der Logik die 
+``||logic:Wenn dann ansonsten||`` Bedingung. In den eckigen Bereich nach dem "wenn" müssen wir eine Bedingung einsetzen.
+Hierfür nutzen wir aus dem Bereiche ``||game: Spiele ||`` den Block ``||game: Sprite berührt ||``. 
+Außerdem tragen wir in die freien Bereiche unser ``||Variables: Hindernis||`` und unsere ``||Variables: Spielfigur||`` ein.
 In den Dann-Bereich (also wenn das Hindernis die Spielfigur berührt) beenden wir das Spiel mit ``||game: Spiel beendet ||`` und in dem Ansonsten-Bereich
 setzen wir das Hindernis wieder nach oben (``||game: Sprite setze y auf 0||``) und geben einen Punkt (``||game: ändere Spielstand um 1||``).
 ```blocks
@@ -120,8 +122,11 @@ basic.forever(function () {
 ```
 
 ## Schritt 7: Der Zufall macht es interessant
-Als letztes müssen wir jetzt noch dafür sorgen, dass das Hindernis nicht immer an der gleichen Stelle entgegen kommt. Hirfür nutezn wir den Zufall.
-Wenn wir den 
+Als letztes müssen wir jetzt noch dafür sorgen, dass das Hindernis nicht immer an der gleichen Stelle entgegen kommt. Hierfür nutzen wir den Zufall.
+Wenn wir den ``||Variables: Hindernis||``-Spielstein wieder nach oben geschoben haben, dann können wir ihn per Zufall auch nach links oder recht schieben.
+Das machen wir, indem wir den Block ``||game: Sprite setze x auf 0||`` aus dem Bereich ``||game: Spiele ||`` auswählen und ihn hinter 
+``||game: Sprite setze y auf 0||`` setzen. Nun benöten wir aus der ``||math: Mathematik||`` den Baustein ``||math: wähle eine zufällige Zahl von 0 bis 10||``. 
+Diesen schieben wir in den Zahlenbereich von ``||game: Sprite setze x auf 0||`` und ändern die 10 in eine 4.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     Spielfigur.change(LedSpriteProperty.X, -1)
