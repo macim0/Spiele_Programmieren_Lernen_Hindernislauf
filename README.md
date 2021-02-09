@@ -66,7 +66,7 @@ basic.forever(function () {
 
 ## Schritt 5: Das Hindernis setzt sich in Bewegung
 Nun muss sich unser Hindernis nach unten auf die Spielfigur zubewegen. Hierfür können wir dem Hindernis einfach sagen, dass er sich 4 mal nach unten bewegen soll (``||game: ändere y um 1||``). 
-Am Besten machen wir dass, indem wir eine Schleife nutzen (``||loops: Wiederhole 4 mal||``). Damit das nicht so schnell geht, benötigen wir noch eine Pause (``||basic: pausiere 100ms||``).<br>
+Am Besten machen wir dass, indem wir eine Schleife nutzen (``||loops: wiederhole 4 mal||``). Damit das nicht so schnell geht, benötigen wir noch eine Pause (``||basic: pausiere 100ms||``).<br>
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -77,9 +77,14 @@ input.onButtonPressed(Button.B, function () {
 })
 let Spielfigur: game.LedSprite = null
 Spielfigur = game.createSprite(2, 4)
-let Hindernis = game.createSprite(randint(0, 4), 0)
+let Hindernis = game.createSprite(2, 0)
 basic.forever(function () {
-	
+	for (let index = 0; index < 4; index++) {
+        Hindernis.change(LedSpriteProperty.Y, 1)
+        basic.pause(100)
+    }
+    Hindernis.set(LedSpriteProperty.Y, 0)
+    basic.pause(100)
 })
 ```
 
