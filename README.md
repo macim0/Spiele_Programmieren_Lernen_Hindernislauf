@@ -64,6 +64,25 @@ basic.forever(function () {
 })
 ```
 
+## Schritt 5: Das Hindernis setzt sich in Bewegung
+Nun muss sich unser Hindernis nach unten auf die Spielfigur zubewegen. Hierfür können wir dem Hindernis einfach sagen, dass er sich 4 mal nach unten bewegen soll (``||game: ändere y um 1||``). 
+Am Besten machen wir dass, indem wir eine Schleife nutzen (``||loops: Wiederhole 4 mal||``). Damit das nicht so schnell geht, benötigen wir noch eine Pause (``||basic: pausiere 100ms||``).<br>
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    Spielfigur.change(LedSpriteProperty.X, -1)
+})
+input.onButtonPressed(Button.B, function () {
+    Spielfigur.change(LedSpriteProperty.X, 1)
+})
+let Spielfigur: game.LedSprite = null
+Spielfigur = game.createSprite(2, 4)
+let Hindernis = game.createSprite(randint(0, 4), 0)
+basic.forever(function () {
+	
+})
+```
+
 ## ~avatar avatar @unplugged
 Unter : [https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/KurzHilfeSpiele.pdf](https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/KurzHilfeSpiele.pdf) <br>
 findest du auch nochmal eine kurze Übersicht zu den Befehlen aus dem Bereich ``||game: Spiele||``. <br>
