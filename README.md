@@ -25,9 +25,8 @@ let Spielfigur = game.createSprite(2, 4)
 
 ## Schritt 3: Bewegen der Spielfigur
 Nun wollen wir die Spielfigur am unteren Bildschrimrand bewegen. 
-Dazu benötigst du aus dem Bereich ``||Input: Eingabe||`` den Block ``||Input: Wenn Knopf A gedrückt||``, in diesen kannst du den Block ``||game: Sprite ändere x um 1 ||`` hineinschieben. <br>
-Wird nun der Knopf A gedrückt sollte sich deine Spielfigur um eins nach rechts bewegen. Ändere die Zahl nun auf -1, somit bewegt sich die Spielfigur nach links.
-Baue dies mit Knopf B so nach, dass sich die Fürug nach rechts bewegt. 
+Dazu benötigst du aus dem Bereich ``||Input: Eingabe||`` den Block ``||Input: Wenn Knopf A gedrückt||``, in diesen kannst du den Block ``||game: Sprite ändere x um 1 ||`` hineinschieben. Wird nun der Knopf A gedrückt sollte sich deine Spielfigur um eins nach rechts bewegen. Ändere die Zahl nun auf -1, somit bewegt sich die Spielfigur nach links.<br>
+Baue dies mit Knopf B so nach, dass sich die Führug nach rechts bewegt. 
 
 ```blocks
 
@@ -166,7 +165,7 @@ Berührt ein Hindernis die Spielfigur ist das Spiel vorbei. Sind die Hindernisse
 
 Dieses Repository kann als **Tutorial** für MakeCode verwenden.
 
-öffne dazu den Link: [https://makecode.calliope.cc/#tutorial:https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf]
+öffne dazu den Link: [https://makecode.calliope.cc/#tutorial:https://github.com/macim0/Spiele_Programmieren_Lernen_Hindernislauf]
 #### Metadaten (verwendet für Suche, Rendering)
 
 * for PXT/calliopemini
