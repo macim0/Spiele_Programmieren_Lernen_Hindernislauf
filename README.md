@@ -32,11 +32,11 @@ Baue dies mit Knopf B so nach, dass sich die Führug nach rechts bewegt.
 
 
 input.onButtonPressed(Button.A, function () {
-    Spielfigur.move(-1)
+    Spielfigur.change(LedSpriteProperty.X, -1)
 })
 
 input.onButtonPressed(Button.B, function () {
-    Spielfigur.move(1)
+    Spielfigur.change(LedSpriteProperty.X, 1)
 })
 
 let Spielfigur = game.createSprite(2, 4)
