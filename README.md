@@ -23,9 +23,10 @@ let Spielfigur: game.LedSprite = 0
 ```
 
 ## Schritt 2: Einen Sprite auf die Variable speichern
-Im Bereich ``||game: Spiel||`` wird mit den sogenannten Sprites gearbeitet. Diese Sprites sind Objekte welche mehrere Eigenschaften haben. Z.B. eine Ausrichtung ( in x-Richtung oder y-Richtung), einen X- bzw. Y- Wert, eine gewisse Helligkeit speichern können oder erkennen können ob sie einen Rand oder andere Sprites berühren. <br>
-Nehme nun aus dem Bereich ``||game: Spiel||`` den Block ``||game: erzeuge Sprite an Position x y ||``. Dieser wird in den Block ``||Variables: Setze Variable auf||`` geschoben.
-Jetzt sollte im Simulator eine LED in der Mitte des Calliope Displays leuchten, eben an der Position x=2 und y=2. Ändere nun den Y-Wert auf 4 um den Sprite am unteren Bildschirmrand erscheinen zu lassen.
+Im Bereich ``||game: Spiel||`` wird mit den sogenannten Sprites gearbeitet. Diese Sprites sind wie Spielsteine oder Spielfiguren
+Sie besitzen eine Position (eingeteilt in X von links nach recht und Y von oben nach unten), eine Blickrichtung, eine Helligkeit und sie können blinken.  <br>
+Nimm nun aus dem Bereich ``||game: Spiel||`` den Block ``||game: erzeuge Sprite an Position x y ||``. Dieser wird in den Block ``||Variables: Setze Variable auf||`` geschoben.
+Jetzt sollte im Simulator eine LED in der Mitte des Calliope Displays leuchten, eben an der Position x=2 (ganz links ist 0 und ganz rechts ist 4) und y=2 (ganz oben ist 0 und ganz unten ist 4). Ändere nun den Y-Wert auf 4 damit die Spielfigur am unteren Bildschirmrand erscheint.
 
 ```blocks 
 let Spielfigur = game.createSprite(2, 4)
