@@ -119,6 +119,36 @@ basic.forever(function () {
 })
 ```
 
+## Schritt 7: Der Zufall macht es interessant
+Als letztes müssen wir jetzt noch dafür sorgen, dass das Hindernis nicht immer an der gleichen Stelle entgegen kommt. Hirfür nutezn wir den Zufall.
+Wenn wir den 
+```blocks
+input.onButtonPressed(Button.A, function () {
+    Spielfigur.change(LedSpriteProperty.X, -1)
+})
+input.onButtonPressed(Button.B, function () {
+    Spielfigur.change(LedSpriteProperty.X, 1)
+})
+let Spielfigur: game.LedSprite = null
+Spielfigur = game.createSprite(2, 4)
+let Hindernis = game.createSprite(2, 0)
+basic.forever(function () {
+	for (let index = 0; index < 4; index++) {
+        Hindernis.change(LedSpriteProperty.Y, 1)
+        basic.pause(200)
+    }
+    if (Spielfigur.isTouching(Hindernis)) {
+        
+        game.gameOver()
+    } else {
+        Hindernis.set(LedSpriteProperty.Y, 0)
+        Hindernis.set(LedSpriteProperty.X, randint(0,4))
+        game.addScore(1)
+    }
+    basic.pause(200)
+})
+```
+
 ## ~avatar avatar @unplugged
 Unter : [https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/KurzHilfeSpiele.pdf](https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/KurzHilfeSpiele.pdf) <br>
 findest du auch nochmal eine kurze Übersicht zu den Befehlen aus dem Bereich ``||game: Spiele||``. <br>
