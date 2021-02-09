@@ -88,6 +88,37 @@ basic.forever(function () {
 })
 ```
 
+## Schritt 6: Das Hindernis wird zur Gefahr
+Wenn das Hindernis unten angekommen ist, müssen wir noch überprüfen ob es die Spielfigur trifft. Hierfür nutzen wir aus der Logik 
+``||logic:Wenn dann sonst||`` Bedingung. Als Bedingung nutzen wir ``||game: Sprite berührt ||``. Hier tragen wir unser Hindernis und unsere Spielfigur ein.
+In den Dann-Bereich (also wenn das Hindernis die Spielfigur berührt) beenden wir das Spiel mit ``||game: Spiel beendet ||`` und in dem Ansonsten-Bereich
+setzen wir das Hindernis wieder nach oben (``||game: Sprite setze y auf 0||``) und geben einen Punkt (``||game: ändere Spielstand um 1||``).
+```blocks
+input.onButtonPressed(Button.A, function () {
+    Spielfigur.change(LedSpriteProperty.X, -1)
+})
+input.onButtonPressed(Button.B, function () {
+    Spielfigur.change(LedSpriteProperty.X, 1)
+})
+let Spielfigur: game.LedSprite = null
+Spielfigur = game.createSprite(2, 4)
+let Hindernis = game.createSprite(2, 0)
+basic.forever(function () {
+	for (let index = 0; index < 4; index++) {
+        Hindernis.change(LedSpriteProperty.Y, 1)
+        basic.pause(200)
+    }
+    if (Spielfigur.isTouching(Hindernis)) {
+        
+        game.gameOver()
+    } else {
+        Hindernis.set(LedSpriteProperty.Y, 0)
+        game.addScore(1)
+    }
+    basic.pause(200)
+})
+```
+
 ## ~avatar avatar @unplugged
 Unter : [https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/KurzHilfeSpiele.pdf](https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/KurzHilfeSpiele.pdf) <br>
 findest du auch nochmal eine kurze Übersicht zu den Befehlen aus dem Bereich ``||game: Spiele||``. <br>
