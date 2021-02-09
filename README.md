@@ -15,9 +15,8 @@ let Spielfigur: game.LedSprite = 0
 ```
 
 ## Schritt 2: Einen Sprite auf die Variable speichern
-Im Bereich ``||game: Spiel||`` was unter ``|advanced: Fortgeschritten|`` wird mit den sogenannten Sprites gearbeitet. Diese Sprites sind wie Spielsteine oder Spielfiguren
-Sie besitzen eine Position (eingeteilt in X von links nach recht und Y von oben nach unten), eine Blickrichtung, eine Helligkeit und sie können blinken.  <br>
-Nimm nun aus dem Bereich ``||game: Spiel||`` den Block ``||game: erzeuge Sprite an Position x y ||``. Dieser wird in den Block ``||Variables: Setze Variable auf||`` geschoben.
+Im Bereich ``||game: Spiel||`` was unter ``|advanced: Fortgeschritten|`` zu finden ist, wird mit den sogenannten Sprites gearbeitet. Diese Sprites sind wie Spielsteine oder Spielfiguren. Sie besitzen eine Position (eingeteilt in X von links nach recht und Y von oben nach unten), eine Blickrichtung, eine Helligkeit und sie können blinken.  <br>
+Wir brauchen aus dem Bereich ``||game: Spiel||`` den Block ``||game: erzeuge Sprite an Position x y ||``. Dieser wird in den Block ``||Variables: Setze Variable auf||`` geschoben.
 Jetzt sollte im Simulator eine LED in der Mitte des Calliope Displays leuchten, eben an der Position x=2 (ganz links ist 0 und ganz rechts ist 4) und y=2 (ganz oben ist 0 und ganz unten ist 4). Ändere nun den Y-Wert auf 4 damit die Spielfigur am unteren Bildschirmrand erscheint.
 
 ```blocks 
@@ -25,11 +24,10 @@ let Spielfigur = game.createSprite(2, 4)
 ```
 
 ## Schritt 3: Bewegen der Spielfigur
-Lass die Spielfigur mit dem A-Knopf ein Feld nach links und mit dem B-Knopf ein Feld nach rechts bewegen. <br>
-Dazu benötigst du aus dem Bereich ``||Input: Eingabe||`` den Block ``||Input: Wenn Knopf A gedrückt||``, in diesen kannst du den Block ``||game: Sprite bewege um 1 ||`` hineinschieben. <br>
-Wird nun der Knopf A gedrückt sollte sich deine Spielfigur um eins nach rechts bewegen. Um die spielfigur nach links zu bewegen kannst du sie um -1 bewegen.
-Die Spielfigur bewegt sich auf der x-Achse, da sie eben in diese Richtung ausgerichtet ist. Dies ist für den späteren Hindernislauf richtig. <br>
-Testweise kannst du ``||basic: Beim Start|`` den Block ``||game: drehe rechts um 90° ||`` einschieben um die Spielfigur hoch und runter zu bewegen. 
+Nun wollen wir die Spielfigur am unteren Bildschrimrand bewegen. 
+Dazu benötigst du aus dem Bereich ``||Input: Eingabe||`` den Block ``||Input: Wenn Knopf A gedrückt||``, in diesen kannst du den Block ``||game: Sprite ändere x um 1 ||`` hineinschieben. <br>
+Wird nun der Knopf A gedrückt sollte sich deine Spielfigur um eins nach rechts bewegen. Ändere die Zahl nun auf -1, somit bewegt sich die Spielfigur nach links.
+Baue dies mit Knopf B so nach, dass sich die Fürug nach rechts bewegt. 
 
 ```blocks
 
