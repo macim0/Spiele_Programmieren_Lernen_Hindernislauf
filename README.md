@@ -1,10 +1,4 @@
 # Hindernislauf Einführung
-## ~avatar avatar @unplugged
-
-Dies ist eine Einführung in das Programmieren von Spielen mit dem @boardname@. 
-
-
-
 
 
 ## ~ @unplugged
@@ -12,8 +6,6 @@ Es soll ein Hindernislauf programmiert werden.
 Ziel des Spieles: Sammle möglichst viele Punkte indem du mit den Tasten A und B den Hindernissen ausweichst, welche vom oberen Bildschirmrand nach unten bewegt werden.
 ![Hindernislauf](https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf/blob/master/HindernislaufGIF.gif?raw=true)
 
-## ~ @unplugged
-In dieser Einführung soll erstmal nur die Spielfigur erstellt werden und in das Thema der Sprites aus dem Bereich  ``||game:Spiele||`` eingeführt werden.
 
 ## Schritt 1: Erstelle eine Spielfigur
 Als erstes erstellen wir uns eine ``||Variables: Variable||`` namens ``||Variables: Spielfigur||``. Diese kommt in den Block ``||basic: Beim Start|``.
@@ -51,6 +43,25 @@ input.onButtonPressed(Button.B, function () {
 })
 
 let Spielfigur = game.createSprite(2, 4)
+```
+
+## Schritt 4: Das erste Hindernis am Horizont
+Wir brauchen ein Hindernis. Hierfür müssen wir eine neue Variable erstellen und einen neuen Spielspielstein erzeugen. Weißt du noch wie es geht? 
+Hier ein kleiner Tipp wo du alles findest: ``||Variables: Setze Variabele Hindernis auf||`` und ``||game: erzeuge Sprite an Position x y||``<br>
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    Spielfigur.change(LedSpriteProperty.X, -1)
+})
+input.onButtonPressed(Button.B, function () {
+    Spielfigur.change(LedSpriteProperty.X, 1)
+})
+let Spielfigur: game.LedSprite = null
+Spielfigur = game.createSprite(2, 4)
+let Hindernis = game.createSprite(randint(0, 4), 0)
+basic.forever(function () {
+	
+})
 ```
 
 ## ~avatar avatar @unplugged
